@@ -10,8 +10,8 @@ class EmailParser
   end
 
    def parse
-     split_emails = emails.split(", ")
-     split_emails = emails.split("  ")
+     split_emails = emails.split(" , ")
+    #  split_emails = emails.split("  ")
      split_emails.uniq
    end
 
