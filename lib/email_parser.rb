@@ -12,7 +12,6 @@ class EmailParser
 
    def parse
      split_emails = emails.split(" ")
-     binding.pry
 
      split_emails.map do |e|
        e.gsub(",", "")
