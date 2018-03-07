@@ -11,8 +11,8 @@ class EmailParser
 
    def parse
      split_emails = emails.split(", ")
-    #  split_emails = emails.split("  ")
-     split_emails.uniq
+     no_space_emails = split_emails.split(" ")
+     no_space_emails.uniq
    end
 
 end
