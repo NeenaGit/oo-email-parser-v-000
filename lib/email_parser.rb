@@ -18,5 +18,4 @@ class EmailParser
      end
      unique_emails.uniq
    end
-
 end
