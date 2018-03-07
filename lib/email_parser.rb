@@ -1,3 +1,4 @@
+require 'pry'
 # Build a class EmailParser that accepts a string of unformatted
 # emails. The parse method on the class should separate them into
 # unique email addresses. The delimiters to support are commas (',')
@@ -10,8 +11,9 @@ class EmailParser
   end
 
    def parse
-     split_emails = emails.split(", ")
-     no_space_emails = split_emails.split(" ")
+     split_emails = emails.split(" ")
+     binding pry
+    #  no_space_emails = split_emails.split(" ")
      no_space_emails.uniq
    end
 
