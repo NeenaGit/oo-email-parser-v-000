@@ -13,10 +13,10 @@ class EmailParser
    def parse
      split_emails = emails.split(" ")
 
-     split_emails.map do |e|
+     unique_emails = split_emails.map do |e|
        e.gsub(",", "")
      end
-    #  no_space_emails = split_emails.split(" ")
+     unique_emails.uniq
    end
 
 end
