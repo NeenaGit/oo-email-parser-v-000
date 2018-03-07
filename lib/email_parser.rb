@@ -12,7 +12,7 @@ class EmailParser
 
    def parse
      split_emails = emails.split(" ")
-     binding pry
+     binding.pry
     #  no_space_emails = split_emails.split(" ")
      no_space_emails.uniq
    end
